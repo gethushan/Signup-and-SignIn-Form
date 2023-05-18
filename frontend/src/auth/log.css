@@ -90,3 +90,11 @@
   .reg{
     translate: 35%;
   }
+  .forum1{
+    flex: 0.9;
+    display: flex;
+    flex-direction: column;
+    font-size: 5vh;
+    justify-content: center;
+    align-items: center;
+  }
