@@ -13,7 +13,7 @@ const Login = (props) => {
 
     const schema = yup.object().shape({
         Email: yup.string().email().required(),
-        Password: yup.string().min(4).max(20).required(),
+        Password: yup.string().min(8).max(20).required(),
     })
     
     const {register, handleSubmit,formState:{errors} } = useForm({
