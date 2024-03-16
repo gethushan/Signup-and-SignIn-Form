@@ -21,7 +21,7 @@ const Login = (props) => {
     })
 
 const allowHome = (event) =>{
-    Axios.post('https://signup-and-signin.vercel.app/j/login',{
+    Axios.post('http://localhost:4000/j/login',{
       email,
       password,
      }).then((response) =>{
