@@ -26,7 +26,7 @@ const Register = (props) => {
     })
 
 const allowLogin = (event) => {
-    Axios.post('http://localhost:4000/j/register',{
+    Axios.post('https://signup-and-signin.vercel.app/j/register',{
       email,
       password,
      }).then(() =>{
