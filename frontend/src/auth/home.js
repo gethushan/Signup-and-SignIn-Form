@@ -17,7 +17,7 @@ const Home = () => {
                 </div>
                 
                     <div className='forum1'>
-                        <a href='https://gethushan.github.io/MyPortfolio/' target='_value'>My Portfolio</a>
+                        <a href='https://gethushan.github.io/MyPortfolio/' target='_value'>My Portfolio</a><br></br>
                         <button onClick={logout}>Logout</button>
                     </div>
                 

@@ -13,7 +13,11 @@ const Register = (props) => {
 
     const schema = yup.object().shape({
         Email: yup.string().email().required(),
-        Password: yup.string().min(8).matches(/(?=.*[a-z])/,'Atleast one Lowercase required').matches(/(?=.*[A-Z])/,'Atleast one Uppercase required').matches(/(?=.*[0-9])/,'Atleast one Numeric Character required').matches(/(?=.*[!@#$%^&*])/,'Atleast one Specialcharacter required').max(20).required(),
+        Password: yup.string().min(8)
+                    .matches(/(?=.*[a-z])/,'Atleast one Lowercase required')
+                    .matches(/(?=.*[A-Z])/,'Atleast one Uppercase required')
+                    .matches(/(?=.*[0-9])/,'Atleast one Numeric Character required')
+                    .matches(/(?=.*[!@#$%^&*])/,'Atleast one Specialcharacter required').max(20).required(),
         Confirm_Password: yup.string().oneOf([yup.ref("Password"),null],"Password must match").required(),
     })
     
