@@ -8,14 +8,14 @@
 
   .main {
     min-height: 100vh;
-    background: linear-gradient(to right top,#65dfc9, #6cdbeb);
+    background: linear-gradient(to right top,#22272e, #535a64);
     display: flex; /* we want to add this to make work those remaining 2 styles */
     align-items: center;  /*Center it to vertical place */
     justify-content: center; /*Center it to Horizontal place */
   }
 
   .glass {
-    background: white;
+    background: #22272e;
     min-height: 50vh ;
     width: 50vh;
     background: linear-gradient(to right bottom, rgba(255,255,255,0.7), rgba(255,255,255,0.3));
@@ -70,15 +70,15 @@
   }
 
   button:hover {
-    background: #7AD7FD;
+    background: #22272e;
   }
 
   input:hover {
-    border: #7AD7FD;
+    border: #22272e;
   }
 
   input:focus {
-    border: #7AD7FD;
+    border: #22272e;
 
   }
   
