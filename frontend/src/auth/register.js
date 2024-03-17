@@ -51,7 +51,7 @@ const allowLogin = (event) => {
                         <label htmlFor='Ps'>Password:</label>
                         <input id='Ps' type="password" placeholder="Password..." {...register("Password")} onChange={(event) => {setPassword(event.target.value)}}/>
                         <p className='db'>{errors.Password?.message}</p>
-                        <label htmlFor='cPs'>Password:</label>
+                        <label htmlFor='cPs'>Confirm Password:</label>
                         <input id='cPs' type="password" placeholder="Confirm Password..." {...register("Confirm_Password")} />
                         <p className='db'>{errors.Confirm_Password?.message}</p><br></br>
                         <button type="submit" >Register</button><br></br>
